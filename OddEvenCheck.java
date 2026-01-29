@@ -13,7 +13,7 @@ public class OddEvenCheck {
 		Scanner sc = new Scanner(System.in); 
         System.out.print("Enter total number of students: "); 
         int num = sc.nextInt(); 
-        // Check odd or even without using % operator 
+       
         int quotient = num / 2; 
         int test = quotient * 2; 
         if (test == num) { 
@@ -23,4 +23,5 @@ public class OddEvenCheck {
         } 
         sc.close(); 
    }
+
 }
