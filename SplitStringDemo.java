@@ -9,18 +9,17 @@ import java.util.Scanner;
 public class SplitStringDemo { 
 	public static void main(String[] args) { 
 		try (Scanner sc = new Scanner(System.in)){ 
-			// Read input string 
+			
 			System.out.println("Enter a sentence:"); 
 			String input = sc.nextLine(); 
 		
-			// Split string using space as delimiter 
 			String[] parts = input.split(" "); 
 
-			// Display substrings 
 			System.out.println("\nSubstrings:"); 
 			for (String p : parts) { 
 				System.out.println(p); 
 			} 
 		} 	
 	}
+
 }
