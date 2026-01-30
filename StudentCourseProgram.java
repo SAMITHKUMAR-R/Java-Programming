@@ -48,7 +48,7 @@ class Enrollment {
 public class StudentCourseProgram { 
 	public static void main(String[] args) { 
 		
-		// 1. Student Data 
+		// 1. Stud Data 
 		ArrayList<Student> students = new ArrayList<>(); 
 		students.add(new Student(1, "Arun", "CSE", 85, "Male", "Chennai")); 
 		students.add(new Student(2, "Priya", "ECE", 78, "Female", "Salem")); 
@@ -101,7 +101,8 @@ public class StudentCourseProgram {
 			} 
 		} 
 		System.out.println("Highest Marks: " + highest); 
-		System.out.println("Lowest Marks: " + lowest); 
+		System.out.println("Lowest Marks: " + lowest);
+		
 		// QUERY 4: Count male & female in each department 
 		System.out.println("\n4) Male & Female count in each department:"); 
 		HashMap<String, Integer> maleCount = new HashMap<>(); 
@@ -119,4 +120,5 @@ public class StudentCourseProgram {
 		} 
 	} 
 } 
+
 
