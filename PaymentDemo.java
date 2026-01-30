@@ -34,14 +34,15 @@ class Payment {
 	public class PaymentDemo { 
 		// Method demonstrating polymorphism 
 		static void makePayment(Payment p) { 
-			p.processPayment();   // Runtime Polymorphism 
+			p.processPayment();  // Runtime Polymorphism 
 		} 
 		public static void main(String[] args) { 
 			Payment p1 = new CreditCardPayment(); 
 			Payment p2 = new PaypalPayment(); 
 			Payment p3 = new BankTransferPayment(); 
-			makePayment(p1);   // Calls CreditCardPayment version 
-			makePayment(p2);   // Calls PaypalPayment version 
-			makePayment(p3);   // Calls BankTransferPayment version 
+			makePayment(p1); // Calls CreditCardPayment version 
+			makePayment(p2); // Calls PaypalPayment version 
+			makePayment(p3); // Calls BankTransferPayment version 
    } 
+
 } 
