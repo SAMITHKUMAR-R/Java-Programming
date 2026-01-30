@@ -10,14 +10,12 @@ Design a java program for the following scenario:
 public class NumberFormatDemo { 
 	public static void main(String[] args) { 
 		try { 
-			// Explicitly creating NumberFormatException 
             NumberFormatException nf = new NumberFormatException("Manually exception"); 
-
-            // Throwing it explicitly 
             throw nf; 
 		} 
 		catch (NumberFormatException e) { 
 			System.out.println("Exception Caught: " + e.getMessage()); 
 		} 
 	} 
+
 } 
