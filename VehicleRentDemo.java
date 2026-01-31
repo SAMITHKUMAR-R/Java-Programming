@@ -19,7 +19,7 @@ class Car extends Vehicle {
 		return rent - (rent * discount); 
         } 
 } 
-//Subclass: Bike 
+
 class Bike extends Vehicle { 
 	double calculateRent() { 
 		double rent = 300;      // base rent 
@@ -27,7 +27,7 @@ class Bike extends Vehicle {
 		return rent - (rent * discount); 
 	} 
 } 
-//Subclass: Truck 
+
 class Truck extends Vehicle { 
 	double calculateRent() { 
 		double rent = 2000;     // base rent 
@@ -36,7 +36,7 @@ class Truck extends Vehicle {
 	} 
 } 
 public class VehicleRentDemo { 
-// Method using polymorphism 
+
 	static void printRentalCosts(Vehicle[] vehicles) { 
 		for (Vehicle v : vehicles) { 
 			System.out.println("Rental Cost: " + v.calculateRent()); 
@@ -51,4 +51,5 @@ public static void main(String[] args) {
 			};
 		printRentalCosts(list); 
 	} 
+
 }
