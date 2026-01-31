@@ -33,11 +33,11 @@ class Account {
         accno = an; 
         balance = amt; 
     } 
-    // read() with one argument 
+  
     void read(int an) { 
         accno = an;
     }
-    // read() with two arguments 
+    
     void read(int an, double amt) { 
         accno = an; 
         balance = amt; 
@@ -58,8 +58,8 @@ public class BankDetails {
         Account a4 = new Account();              // will use read(1arg) 
         Account a5 = new Account();              // will use read(2arg) 
  
-        a4.read(2);          // using one parameter 
-        a5.read(3, 600);     // using two parameters 
+        a4.read(2);        
+        a5.read(3, 600);     
  
         // Print details 
         a1.print(); 
@@ -69,3 +69,4 @@ public class BankDetails {
         a5.print(); 
     } 
 } 
+
