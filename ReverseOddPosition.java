@@ -12,17 +12,17 @@ public class ReverseOddPosition {
 			// Input 
 			System.out.println("Enter a string:"); 
 			String str = sc.nextLine(); 
-
 			// Reverse using StringBuilder 
 			String reversed = new StringBuilder(str).reverse().toString(); 
 			System.out.println("Reversed String: " + reversed); 
 			// Display characters at odd positions (index starts from 0) 
 			System.out.print("Characters at odd positions: "); 
 			for (int i = 0; i < str.length(); i++) { 
-				if (i % 2 != 0) {   // odd index 
+				if (i % 2 != 0) { 
 					System.out.print(str.charAt(i) + " "); 
 				} 
 			} 
-		} 
+		}
 	}
 }
+
