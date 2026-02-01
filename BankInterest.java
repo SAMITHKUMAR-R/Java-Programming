@@ -33,12 +33,11 @@ class AXIS extends Bank {
 public class BankInterest { 
   public static void main(String[] args) { 
       Bank b; 
-      b = new SBI();   
+      b = new SBI();   // Runtime polymorphism 
       System.out.println("SBI Rate of Interest: " + b.getRateOfInterest() + "%"); 
-      b = new ICICI(); 
+      b = new ICICI(); // Runtime polymorphism 
       System.out.println("ICICI Rate of Interest: " + b.getRateOfInterest() + "%"); 
-      b = new AXIS();  
+      b = new AXIS();  // Runtime polymorphism 
       System.out.println("AXIS Rate of Interest: " + b.getRateOfInterest() + "%"); 
   } 
-
 }
