@@ -101,10 +101,10 @@ public class CMSDemo {
 				new ImagePost("Design Patterns Chart") 
 		}; 
 		for (Content c : contents) { 
-			c.getContentInfo();   // Concrete method 
-			c.publish();          // Polymorphic call 
-			c.edit();             // Polymorphic call 
-			// Downcasting to access interface methods 
+			c.getContentInfo();  
+			c.publish(); 
+			c.edit();
+			
 			if (c instanceof Commentable) { 
 				((Commentable) c).addComment("Great content!"); 
 			} 
@@ -115,4 +115,5 @@ public class CMSDemo {
 		} 
 	} 
 } 
+
 
