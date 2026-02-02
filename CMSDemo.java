@@ -7,7 +7,6 @@ and ImagePost extending the abstract class and interfaces. Write CMS logic that 
 polymorphically and supports comments and shares. 
  */
 
-//Abstract class 
 abstract class Content { 
 	String title; 
 
@@ -23,17 +22,14 @@ abstract class Content {
 	} 
 } 
 
-//Interface for comments 
 interface Commentable { 
 	void addComment(String comment); 
 } 
 
-//Interface for sharing 
 interface Shareable { 
 	void share(); 
 } 
 
-//BlogPost class 
 class BlogPost extends Content implements Commentable, Shareable { 
 
 	BlogPost(String title) { 
@@ -57,7 +53,6 @@ class BlogPost extends Content implements Commentable, Shareable {
 	} 
 } 
 
-//VideoPost class 
 class VideoPost extends Content implements Commentable, Shareable { 
 	VideoPost(String title) { 
 		super(title); 
@@ -76,7 +71,6 @@ class VideoPost extends Content implements Commentable, Shareable {
 	} 
 } 
 
-//ImagePost class 
 class ImagePost extends Content implements Commentable, Shareable { 
 
 	ImagePost(String title) { 
@@ -121,3 +115,4 @@ public class CMSDemo {
 		} 
 	} 
 } 
+
