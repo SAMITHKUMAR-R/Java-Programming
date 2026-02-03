@@ -12,10 +12,7 @@ import java.util.*;
 public class EmployeeDepartmentGrouping { 
 	public static void main(String[] args) { 
  
-		// Store employees and departments 
 		Map<String, String> employeeMap = new HashMap<>(); 
- 
-        // Adding employees (duplicate names will not be added) 
         employeeMap.put("Arun", "HR"); 
         employeeMap.put("Kumar", "IT"); 
         employeeMap.put("Priya", "HR"); 
@@ -29,18 +26,16 @@ public class EmployeeDepartmentGrouping {
         for (Map.Entry<String, String> entry : employeeMap.entrySet()) { 
             String employee = entry.getKey(); 
             String department = entry.getValue(); 
- 
-            // If department not found, create list 
+			
             departmentMap.putIfAbsent(department, new ArrayList<>()); 
  
-            // Add employee to respective department list 
             departmentMap.get(department).add(employee); 
         } 
  
-        // Display department-wise employees 
         System.out.println("Department-wise Employees:"); 
         for (String dept : departmentMap.keySet()) { 
             System.out.println(dept + " : " + departmentMap.get(dept)); 
         }
 	} 
+
 }
