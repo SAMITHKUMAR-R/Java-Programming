@@ -29,26 +29,35 @@ public class InsertEmployee {
 			String dept = sc.nextLine(); 
 			System.out.print("Enter Salary: "); 
 			double salary = sc.nextDouble(); 
+			
 			// 2. Load Driver (Optional for newer versions) 
 			Class.forName("com.mysql.cj.jdbc.Driver"); 
+			
 			// 3. Establish Connection 
 			Connection con = DriverManager.getConnection( "jdbc:mysql://localhost:3306/yourdbname","root", "password" ); 
+			
 			// 4. Create Statement 
 			Statement stmt = con.createStatement(); 
+			
 			// 5. Construct SQL Query (Dynamic SQL) 
 			String query = "INSERT INTO Employee(emp_id, emp_name, dept, salary) VALUES(" + emp_id + ", '" + emp_name + "', '" + dept + "', " + salary + ")"; 
+			
 			// 6. Execute Query 
 			int rows = stmt.executeUpdate(query); 
+			
 			// 7. Display result 
 			if (rows > 0) { 
 				System.out.println("Employee record inserted successfully!"); 
 			} 
+			
 			// 8. Close connection 
 			stmt.close(); 
 			con.close(); 
-		} catch (Exception e) { 
+		} 
+		catch (Exception e) { 
 			System.out.println("Error: " + e); 
 		} 
 		sc.close(); 
 	} 
+
 } 
