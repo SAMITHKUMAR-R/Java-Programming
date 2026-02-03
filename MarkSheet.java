@@ -11,14 +11,15 @@ import java.util.Scanner;
 public class MarkSheet { 
 	public static void main(String[] args) { 
 		Scanner sc = new Scanner(System.in); 
-        // Getting input 
+		
         System.out.print("Enter Mark: "); 
         double mark = sc.nextDouble(); 
         System.out.print("Enter Grade: "); 
         String grade = sc.next(); 
-        // Displaying output 
+
         System.out.println("Mark : " + mark); 
         System.out.println("Grade : " + grade); 
         sc.close(); 
 	}
+
 } 
