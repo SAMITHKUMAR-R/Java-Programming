@@ -10,7 +10,7 @@ class ThreadA extends Thread {
 		try { 
 			for (int i = 1; i <= 10; i++) { 
 				System.out.println("Thread A: " + i); 
-				Thread.sleep(5000); // 5 seconds delay 
+				Thread.sleep(5000); // 5s delay 
 			} 
 		}
 		catch (InterruptedException e) { 
@@ -23,7 +23,7 @@ class ThreadB extends Thread {
 		try { 
 			for (int i = 1; i <= 10; i++) { 
 				System.out.println("Thread B: " + i); 
-				Thread.sleep(5000); // 5 seconds delay 
+				Thread.sleep(5000); // 5s delay 
 			} 
 		} 
 		catch (InterruptedException e) { 
@@ -38,4 +38,5 @@ public class ThreadDemo {
 		t1.start(); 
 		t2.start(); 
 	} 
+
 }
