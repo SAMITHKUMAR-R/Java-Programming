@@ -13,7 +13,6 @@ public class StringTokenizerExample {
  
     public static void main(String[] args) { 
  
-        // String 1 
         String s1 = "12/34/56/78/90/00"; 
         StringTokenizer st1 = new StringTokenizer(s1, "/"); 
  
@@ -22,7 +21,6 @@ public class StringTokenizerExample {
             System.out.println(st1.nextToken()); 
         } 
  
-        // String 2 
         String s2 = "www.java.io.stringtokenizer.parsestring"; 
         StringTokenizer st2 = new StringTokenizer(s2, "."); 
  
@@ -32,3 +30,4 @@ public class StringTokenizerExample {
         } 
     } 
 	} 
+
