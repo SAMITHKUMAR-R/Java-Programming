@@ -24,7 +24,6 @@ class Student {
 		this.city = city; 
 	} 
 } 
-
 class Course { 
 	int courseID, credits; 
 	String courseName; 
@@ -34,7 +33,6 @@ class Course {
 		this.credits = credits; 
 	} 
 } 
-
 class Enrollment { 
 	int studentID, courseID; 
 	String semester; 
@@ -44,7 +42,6 @@ class Enrollment {
 		this.semester = semester; 
 	} 
 } 
-
 public class StudentCourseProgram { 
 	public static void main(String[] args) { 
 		
@@ -120,5 +117,6 @@ public class StudentCourseProgram {
 		} 
 	} 
 } 
+
 
 
