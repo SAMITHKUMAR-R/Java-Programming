@@ -23,14 +23,13 @@ public class ThreadPriorityDemo {
 		MyThread T2 = new MyThread("Thread T2"); 
 		MyThread T3 = new MyThread("Thread T3"); 
 		
-		// Setting priorities 
 		T1.setPriority(Thread.MIN_PRIORITY);   // Priority 1 
 		T2.setPriority(Thread.NORM_PRIORITY);  // Priority 5 
 		T3.setPriority(Thread.MAX_PRIORITY);   // Priority 10 
 		
-		// Start threads 
 		T1.start(); 
 		T2.start(); 
 		T3.start(); 
 	} 
+
 } 
