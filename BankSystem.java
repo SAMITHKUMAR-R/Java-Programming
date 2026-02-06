@@ -16,21 +16,19 @@ The program should:
 
 import java.util.Scanner;
 
-// User-defined exception for daily limit 
+
 class DailyLimitExceededException extends Exception { 
 	public DailyLimitExceededException(String msg) { 
 		super(msg); 
 	} 
 } 
 
-//User-defined exception for insufficient balance 
 class InsufficientBalanceException extends Exception { 
 	public InsufficientBalanceException(String msg) { 
 		super(msg); 
 	} 
 } 
 
-//Account class 
 class Accounts { 
 	private double balance; 
 	private final double DAILY_LIMIT = 50000; 
@@ -52,7 +50,6 @@ class Accounts {
 	} 
 } 
 
-//Main class 
 public class BankSystem { 
 	public static void main(String[] args) { 
 		Scanner sc = new Scanner(System.in);
@@ -78,4 +75,5 @@ public class BankSystem {
 		} 	
 		sc.close() ;
 	} 
+
 } 
