@@ -28,7 +28,6 @@ public class EmployeeSerializationDemo {
 	public static void main(String[] args) { 
 		String filename = "employees.dat"; 
 		
-		// Create employee list 
 		List<Employee> empList = new ArrayList<>(); 
 		empList.add(new Employee(101, "Alice", 50000)); 
 		empList.add(new Employee(102, "Bob", 55000)); 
@@ -41,7 +40,6 @@ public class EmployeeSerializationDemo {
 			e.printStackTrace(); 
 		} 
 		
-		// Deserialization 
 		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) { 
 			List<Employee> list = (List<Employee>) ois.readObject(); 
 			System.out.println("\nDeserialized Employee Data:"); 
@@ -52,4 +50,5 @@ public class EmployeeSerializationDemo {
 			e.printStackTrace(); 
 		} 
 	} 
+
 }
