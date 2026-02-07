@@ -12,21 +12,20 @@ Expected output: "KARTHIK".
 
 import java.util.Scanner; 
 public class EmailNameExtractor { 
-	public static void main(String[] args) { 
-
+	public static void main(String[] args) {
 		try (Scanner sc = new Scanner(System.in)){ 
 			System.out.println("Enter email ID:"); 
 			String email = sc.nextLine(); 
 
-			// Check for "@" 
 			if (!email.contains("@")) { 
 				System.out.println("Invalid Email"); 
 			} 
 			else { 
 				int index = email.indexOf("@"); 
-				String name = email.substring(0, index);   // extract before "@" 
+				String name = email.substring(0, index);
 				System.out.println(name.toUpperCase()); 
 			} 
 		} 
 	} 
 }
+
