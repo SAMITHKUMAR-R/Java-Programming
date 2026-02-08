@@ -1,4 +1,4 @@
-package programs;
+60package programs;
 
 /*
 In a company an employee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 
@@ -15,13 +15,14 @@ public class GrossSalary {
 		double basic = sc.nextDouble(); 
 		double hra=0, da, gross; 
 		if (basic < 1500) { 
-			hra = basic * 0.10;   // 10% 
-			da = basic * 0.90;    // 90% 
+			hra = basic * 0.10;
+			da = basic * 0.90;
 		} else { 
-			da = basic * 0.98;    // 98% 
+			da = basic * 0.98;
 		} 
 		gross = basic + hra + da; 
 		System.out.println("Gross Salary = " + gross); 
 		sc.close(); 
 	} 
 } 
+
