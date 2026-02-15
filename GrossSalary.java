@@ -1,5 +1,4 @@
 60package programs;
-
 /*
 In a company an employee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 
 10% of basic salary and DA = 90% of basic salary. If his salary is either equal to or above Rs. 
@@ -25,4 +24,5 @@ public class GrossSalary {
 		sc.close(); 
 	} 
 } 
+
 
