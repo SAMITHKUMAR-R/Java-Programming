@@ -16,7 +16,6 @@ public class EmailNameExtractor {
 		try (Scanner sc = new Scanner(System.in)){ 
 			System.out.println("Enter email ID:"); 
 			String email = sc.nextLine(); 
-
 			if (!email.contains("@")) { 
 				System.out.println("Invalid Email"); 
 			} 
@@ -28,4 +27,5 @@ public class EmailNameExtractor {
 		} 
 	} 
 }
+
 
