@@ -8,32 +8,25 @@ import java.util.regex.*;
 import java.io.*;
 
 class Result {
-
-   
-    
     public static void countApplesAndOranges(int s, int t, int a, int b, List<Integer> apples, List<Integer> oranges) {
     int appleCount = 0;
     int orangeCount = 0;
-
     for (Integer d : apples) {
         int position = a + d;
         if (position >= s && position <= t) {
             appleCount++;
         }
     }
-
     for (Integer d : oranges) {
         int position = b + d;
         if (position >= s && position <= t) {
             orangeCount++;
         }
     }
-
     System.out.println(appleCount);
     System.out.println(orangeCount);
 }
 }
-
 public class AppleAndOrange {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -79,4 +72,5 @@ public class AppleAndOrange {
         bufferedReader.close();
     }
 }
+
 
