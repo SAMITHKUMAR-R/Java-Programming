@@ -18,8 +18,7 @@ public class LargestNumber {
         }
 
         int largest = arr[0];
-
-        // Find largest element
+        
         for (int i = 1; i < n; i++) {
             if (arr[i] > largest) {
                 largest = arr[i];
