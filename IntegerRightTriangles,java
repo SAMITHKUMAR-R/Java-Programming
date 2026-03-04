@@ -1,0 +1,52 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        int MAX = 5000000;
+        int[] counts = new int[MAX + 1];
+        
+        // Step 1 & 2: Generate perimeters using Euclid's Formula
+        for (long m = 2; 2 * m * m <= MAX; m++) {
+            for (long n = 1; n < m; n++) {
+                if ((m - n) % 2 != 0 && gcd(m, n) == 1) {
+                    long pPrim = 2 * m * (m + n);
+                    for (long p = pPrim; p <= MAX; p += pPrim) {
+                        counts[(int)p]++;
+                    }
+                }
+            }
+        }
+
+        // Step 3: Precompute the best p for every N
+        int[] bestP = new int[MAX + 1];
+        int currentMaxCount = 0;
+        int currentBestP = 0;
+        for (int i = 1; i <= MAX; i++) {
+            if (counts[i] > currentMaxCount) {
+                currentMaxCount = counts[i];
+                currentBestP = i;
+            }
+            bestP[i] = currentBestP;
+        }
+
+        // Handle Test Cases
+        Scanner sc = new Scanner(System.in);
+        if(sc.hasNextInt()){
+            int T = sc.nextInt();
+            while (T-- > 0) {
+                int N = sc.nextInt();
+                System.out.println(bestP[N]);
+            }
+        }
+    }
+
+    private static long gcd(long a, long b) {
+        while (b != 0) {
+            a %= b;
+            long temp = a;
+            a = b;
+            b = temp;
+        }
+        return a;
+    }
+}
